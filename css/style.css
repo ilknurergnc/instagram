@@ -1,9 +1,16 @@
-::placeholder{
+::placeholder {
     text-align: center;
     font-size: 14px;
     color: gray;
     background-position: 40%;
     background-size: 6%;
+    background-image: url(/assets/search-solid.svg);
+    background-repeat: no-repeat;
+  }
+
+  .card-body {
+    overflow-y: hidden;
+    display: flex; /*d-flex ile storylerin yazıları resmin altına sabitlendi*/
   }
   
   input.empty {
@@ -34,6 +41,10 @@
     color: black;
   }
 
+  .rightpanel {
+    position: fixed;
+  }
+
   .rightpanellinks {
     text-decoration: none;
     color: lightgray;
@@ -42,4 +53,8 @@
   .rightpanellinks:hover {
     text-decoration: none;
     color: lightgray;
+  }
+
+  .middlearea {
+    height: 200px !important;
   }

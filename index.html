@@ -8,9 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
     crossorigin="anonymous">
 
@@ -18,9 +16,11 @@
 
     <title>Instagram</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-light border">
-        <div class="logo">
+  <body style="padding: 80px;"> <!--body ye içerik ile birleşmemesi için padding verdik.-->
+
+    <!-- fixed-top navbarı sabitler top üste - bottom alta sabitler -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light border bg-white " style="height: 54px;">
+        <div class="logo" style="margin-left: 192px;">
             <a class="navbar-brand" href="#"><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
             </a>
             <button class="navbar-toggler" 
@@ -33,315 +33,324 @@
                 <span class="navbar-toggler-icon mr-5"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse">
-            <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
-                <input class="form-control mr-sm-2 empty" 
-                       type="search" 
-                       placeholder="Ara" 
-                       style="font-family: Arial, FontAwesome; height: 28px; width: 216px;" 
-                       aria-label="Search"> 
+
+        <!--arama kısmının ortaya alınması için d-flex = display=flex; -->
+        <div class="collapse navbar-collapse d-flex justify-content-center">
+            <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+                <input
+                    class="form-control mr-sm-2 empty"
+                    type="search " 
+                    placeholder="Ara"
+                    style="font-family: Arial, FontAwesome; height: 28px; width: 216px;"
+                    aria-label="Search">
             </form>
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+
+        <div class="collapse d-sm-none d-md-block ml-5 mt-2" style="margin-right: 192px;">
+            <ul class="navbar-nav">  
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-home fa-lg mr-2 d-done d-sm-block mt-1"></i>
-                        <span class="sr-only">(current)</span>
-                    </a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-home fa-lg mr-2 d-done d-sm-block mt-1"></i>
+                            <span class="sr-only">(current)</span>
+                        </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-facebook-messenger fa-lg mr-2 mt-1" ></i>
-                    </a>
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-facebook-messenger fa-lg mr-2 mt-1" ></i>
+                        </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-compass fa-lg mr-2 mt-1" ></i>
-                    </a>
+                        <a class="nav-link" href="#">
+                            <i class="far fa-compass fa-lg mr-2 mt-1" ></i>
+                        </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-heart
-                        fa-lg mr-2 mt-1 "></i>
-                    </a>
+                        <a class="nav-link" href="#">
+                            <i class="far fa-heart
+                            fa-lg mr-2 mt-1 "></i>
+                        </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="https://www.instagram.com/ilknurergenc/" target="_blank">
-                        <img src="img/ins.jpg" style="width: 30px; height: 30px; border-radius: 50%;"
-                        class="mb-2">
-                    </a>
+                        <a class="nav-link" href="https://www.instagram.com/ilknurergenc/" target="_blank">
+                            <img src="img/ins.jpg" style="width: 30px; height: 30px; border-radius: 50%;"
+                            class="mb-2">
+                        </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> 
 
-    <div class="container middlearea">
+
+    <div class="container middlearea mt-2">
         <div class="row">
-            <div class="col-6">
-                <div class="card" style="margin-top: 7px;">
-                    <div class="card-body ">
-                        <a href="https://www.instagram.com/bloomcleaningg/" style="text-decoration: none;" target="_blank">
-                            <img src="img/bloom.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">bloomcleaningg</span>
-                        </a>
-                        <a href="https://www.instagram.com/milocicegi" style="text-decoration: none" target="_blank">
-                            <img src="img/milo.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">milocicegi</span>
-                        </a>
-                        <a href="https://www.instagram.com/coobishco/" style="text-decoration: none" target="_blank">
-                            <img src="img/coobishco.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">coobishco</span>
-                        </a>
-                        <a href="https://www.instagram.com/yogaramann/" style="text-decoration: none" target="_blank">
-                            <img src="img/yogaramann.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">yogaramann</span>
-                        </a>
-                        <a href="https://www.instagram.com/tenis.market/" style="text-decoration: none" target="_blank">
-                            <img src="img/tenismarket.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">tenis.market</span>
-                        </a>
-                        <a href="https://www.instagram.com/patika.dev/" style="text-decoration: none" target="_blank">
-                            <img src="img/patika.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext mr-1">patika.dev</span>
-                        </a>
-                        <a href="https://www.instagram.com/ventureplaces/" style="text-decoration:none" target="_blank">
-                            <img src="img/venture.jpg" class="storyphoto img-fluid mb-1">
-                            <span class="storytext">ventureplaces</span>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-10 offset-1">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="https://www.instagram.com/bloomcleaningg/" style="text-decoration: none;" target="_blank">
+                                    <img src="img/bloom.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">bloomcleaningg</span>
+                                </a>
+                                <a href="https://www.instagram.com/milocicegi" style="text-decoration: none;"target="_blank">
+                                    <img src="img/milo.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">milocicegi</span>
+                                </a>
+                                <a href="https://www.instagram.com/coobishco/" style="text-decoration: none" target="_blank">
+                                    <img src="img/coobishco.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">coobishco</span>
+                                </a>
+                                <a href="https://www.instagram.com/yogaramann/" style="text-decoration: none" target="_blank">
+                                    <img src="img/yogaramann.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">yogaramann</span>
+                                </a>
+                                <a href="https://www.instagram.com/tenis.market/" style="text-decoration: none" target="_blank">
+                                    <img src="img/tenismarket.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">tenis.market</span>
+                                </a>
+                                <a href="https://www.instagram.com/patika.dev/" style="text-decoration: none" target="_blank">
+                                    <img src="img/patika.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">patika.dev</span>
+                                </a>
+                                <a href="https://www.instagram.com/ventureplaces/" style="text-decoration:none" target="_blank">
+                                    <img src="img/venture.jpg" class="storyphoto img-fluid">
+                                    <span class="storytext">ventureplaces</span>
+                                </a>
+                            </div>
+                        </div>
 
-      <!--1-->  <div class="card" style="margin-top: 7px;">
-                    <div class="card-header">
-                        <img src="img/ins.jpg" class="mr-2" style="width: 35px; height: 35px; border-radius: 50%;">
-                        <span class="postuserfont"><strong><a href="https://www.instagram.com/ilknurergenc/" target="_blank" style="color: black;">ilknurergenc</a></strong></span>
-                        <span class="m-5"><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
+            <!--1-->    <div class="card" style="margin-top: 7px;">
+                            <div class="card-header bg-white">
+                                <div class="row">
+                                    <img src="img/ins.jpg" class="mr-2 ml-3" style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span class="postuserfont mt-1"><strong><a href="https://www.instagram.com/ilknurergenc/" target="_blank" style="color: black;">ilknurergenc</a></strong></span>
+                                    <div class="col-auto ml-auto">
+                                        <span><i class="fas fa-ellipsis-h"></i></span>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <img src="img/piyano.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
+                            <img src="img/piyano.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
 
-                    <ul class="list-group list-group-horizontal" style="list-style-type: none;">
+                            <ul class="list-group list-group-horizontal" style="list-style-type: none; border: none;">
 
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+                                
+                                <li class="nav-item col-auto ml-auto"><a class="nav-link" href="#"><i class="far fa-bookmark fa-lg " style="color: black; position: relative; font-size: 23px; "></i></a></li>
+                            </ul>
+
+                            <span class="mt-2">
+                                <img src="img/coobishco.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
+                                <span class="postuserfont"><strong>coobishco</strong> ve <strong>1453 diğer kişi</strong> beğendi</span>
+                            </span>
+
+                            <div class="card-body " style="margin-top: -15px">
+                                <p class="card-text postuserfont">
+                                    <strong style="margin-left: -4px; margin-right: 5px;">ilknurergenc</strong> Piyanonun sesi huzur veriyor.. 
+                                </p>
+                                <a href="#" style="text-decoration: none;">
+                                    <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">300 yorumun tümünü gör</p>
+                                </a>
+                                <p class="card-text postuserfont" style="margin-left: -4px; margin-right: 5px;" ><strong>milocicegi</strong> Chopin'in eserlerine bayılıyorum. Senden dinlemek isterim :)</p>
+                                <p class="card-text postuserfont" style="margin-top: -15px">
+                                    <strong style="margin-left: -4px; margin-right: 5px;">coobishco</strong> A wonderful picture! 
+                                </p>
+                                <p class="card-text" style="margin-top: -10px; margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">5 SAAT ÖNCE</p>
+                            </div>
+
+                            <div class="card-footer bg-white" style="border: none; color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
+                                <div class="row">
+                                <span>Yorum Ekle..</span>
+                                <div class="col-auto ml-auto">
+                                    <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <!--2-->  <div class="card" style="margin-top: 7px;">
+                            <div class="card-header bg-white">
+                                <div class="row">
+                                    <img src="img/bloom.jpg" class="mr-2 ml-3" style="width: 35px; height: 35px; border-radius: 50%;">
+                                        <span class="postuserfont mt-1"><strong><a href="https://www.instagram.com/bloomcleaningg/" target="_blank" style="color: black;">bloomcleaningg</a></strong></span>
+                                    <div class="col-auto ml-auto">
+                                        <span><i class="fas fa-ellipsis-h"></i></span>
+                                    </div>  
+                                </div>           
+                            </div>
+
+                            <img src="img/bloom2.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
+
+                            <ul class="list-group list-group-horizontal" style="list-style-type: none; border: none;">
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+                                
+                                <li class="nav-item col-auto ml-auto"><a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
+                            </ul>
+
+                            <span class="mt-2">
+                                <img src="img/milo.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
+                                <span class="postuserfont"><strong>milocicegi</strong> ve <strong>17.777 diğer kişi</strong> beğendi</span>
+                            </span>
+
+                            <div class="card-body " style="margin-top: -15px">
+                                <p class="card-text postuserfont">
+                                    <strong style="margin-left: -4px; margin-right: 5px;">bloomcleaningg</strong> Temizlik Şirketi.Temizlikte tek adres! Bilgi için Bize Ulaşın!
+                                </p>
+                                <a href="#" style="text-decoration: none;">
+                                    <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">1.200 yorumun tümünü gör</p>
+                                </a>
+                                <p class="card-text postuserfont"><strong style="margin-left: -4px; margin-right: 5px;">ilknurergenc</strong> Firmanın işçiliğinden ve kalitesinden çok memnun kaldık. Tavsiye ederiz! </p>
+                                <p class="card-text postuserfont" style="margin-top: -15px"><strong style="margin-left: -4px; margin-right: 5px;">milocicegi</strong> Ofisimiz, koltuklarımız tertemiz oldu. 
+                                </p>
+                                <p class="card-text" style="margin-top: -10px;margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">1 SAAT ÖNCE</p>
+                            </div>
+
+                            <div class="card-footer bg-white" style="border: none; color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
+                                <div class="row">
+                                <span>Yorum Ekle..</span>
+                                    <div class="col-auto ml-auto">
+                                        <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <li class="nav-item ml-4"><a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
-                    </ul>
+            <!--3-->  <div class="card" style="margin-top: 7px; margin-bottom: 15px;">
+                            <div class="card-header bg-white">
+                                <div class="row">
+                                    <img src="img/coobishco.jpg" class="mr-2 ml-3" style="width: 35px; height: 35px; border-radius: 50%;">
+                                        <span class="postuserfont mt-11"><strong><a href="https://www.instagram.com/coobishco/" target="_blank" style="color: black;">coobishco</a></strong></span>
+                                    <div class="col-auto ml-auto">
+                                        <span><i class="fas fa-ellipsis-h"></i></span>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <span class="mt-2">
-                        <img src="img/coobishco.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
-                        <span class="postuserfont"><strong>coobishco</strong> ve <strong>1453 diğer kişi</strong> beğendi</span>
-                    </span>
+                            <img src="img/coobishco2.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
 
-                    <div class="card-body " style="margin-top: -15px">
-                        <p class="card-text postuserfont">
-                            <strong style="margin-left: -4px; margin-right: 5px;">ilknurergenc</strong> Piyanonun sesi huzur veriyor.. 
-                        </p>
-                        <a href="#" style="text-decoration: none;">
-                            <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">300 yorumun tümünü gör</p>
-                        </a>
-                        <p class="card-text postuserfont" style="margin-left: -4px; margin-right: 5px;" ><strong>milocicegi</strong> Chopin'in eserlerine bayılıyorum. Senden dinlemek isterim :)</p>
-                        <p class="card-text postuserfont" style="margin-top: -15px">
-                            <strong style="margin-left: -4px; margin-right: 5px;">coobishco</strong> A wonderful picture! 
-                        </p>
-                        <p class="card-text" style="margin-top: -10px;margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">5 SAAT ÖNCE</p>
+                            <ul class="list-group list-group-horizontal" style="list-style-type: none; border: none;">
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
+                                
+                                <li class="nav-item ml-4"><a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
+                            </ul>
+
+                            <span class="mt-2">
+                                <img src="img/patika.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
+                                <span class="postuserfont"><strong>patika.dev</strong> ve <strong>888 diğer kişi</strong> beğendi</span>
+                            </span>
+
+                            <div class="card-body " style="margin-top: -15px">
+                                <p class="card-text postuserfont">
+                                    <strong style="margin-left: -4px; margin-right: 5px;">coobishco</strong> Damak tadınıza uygun nefis kurabiyelerimi tatmak ister misiniz? 
+                                </p>
+                                <a href="#" style="text-decoration: none;">
+                                    <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">121 yorumun tümünü gör</p>
+                                </a>
+                                <p class="card-text postuserfont" style="margin-left: -4px; margin-right: 5px;" ><strong>patika.dev</strong> Kurabiyeler ekibimize ulaştı. Elinize sağlık!</p>
+                                <p class="card-text postuserfont" style="margin-top: -15px">
+                                    <strong style="margin-left: -4px; margin-right: 5px;">yogaramann</strong> Yoga severler ile buluşan miss kurabiyeler</p>
+                                <p class="card-text" style="margin-top: -10px;margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">10 SAAT ÖNCE</p>
+                            </div>
+
+                            <div class="card-footer bg-white" style="border: none; color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
+                                <div class="row">
+                                <span>Yorum Ekle..</span>
+                                <div class="col-auto ml-auto">
+                                <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="card-footer" style="color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
-                        <span style="margin-left: -4px; ">Yorum Ekle..</span>
-                        <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
-                    
-                </div>
-
-      <!--2-->  <div class="card" style="margin-top: 7px;">
-                    <div class="card-header">
-                        <img src="img/bloom.jpg" class="mr-2" style="width: 35px; height: 35px; border-radius: 50%;">
-                        <span class="postuserfont"><strong><a href="https://www.instagram.com/bloomcleaningg/" target="_blank" style="color: black;">bloomcleaningg</a></strong></span>
-                        <span class="m-5"><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
-
-                    <img src="img/bloom2.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
-
-                    <ul class="list-group list-group-horizontal" style="list-style-type: none;">
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
-                        
-                        <li class="nav-item ml-4"><a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
-                    </ul>
-
-                    <span class="mt-2">
-                        <img src="img/milo.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
-                        <span class="postuserfont"><strong>milocicegi</strong> ve <strong>17.777 diğer kişi</strong> beğendi</span>
-                    </span>
-
-                    <div class="card-body " style="margin-top: -15px">
-                        <p class="card-text postuserfont">
-                            <strong style="margin-left: -4px; margin-right: 5px;">bloomcleaningg</strong> Temizlik Şirketi.Temizlikte tek adres! Bilgi için Bize Ulaşın!
-                        </p>
-                        <a href="#" style="text-decoration: none;">
-                            <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">1.200 yorumun tümünü gör</p>
-                        </a>
-                        <p class="card-text postuserfont"><strong style="margin-left: -4px; margin-right: 5px;">ilknurergenc</strong> Firmanın işçiliğinden ve kalitesinden çok memnun kaldık. Tavsiye ederiz! </p>
-                        <p class="card-text postuserfont" style="margin-top: -15px"><strong style="margin-left: -4px; margin-right: 5px;">milocicegi</strong> Ofisimiz, koltuklarımız tertemiz oldu. 
-                        </p>
-                        <p class="card-text" style="margin-top: -10px;margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">1 SAAT ÖNCE</p>
-                    </div>
-
-                    <div class="card-footer" style="color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
-                        <span style="margin-left: -4px; ">Yorum Ekle..</span>
-                        <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
-                </div>
-
-      <!--3-->  <div class="card" style="margin-top: 7px; margin-bottom: 15px;">
-                    <div class="card-header">
-                        <img src="img/coobishco.jpg" class="mr-2" style="width: 35px; height: 35px; border-radius: 50%;">
-                        <span class="postuserfont"><strong><a href="https://www.instagram.com/coobishco/" target="_blank" style="color: black;">coobishco</a></strong></span>
-                        <span class="m-5"><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
-
-                    <img src="img/coobishco2.jpg" class="card-img-top" style="height: 600px; border-radius: 1%;" alt="...">
-
-                    <ul class="list-group list-group-horizontal" style="list-style-type: none;">
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-heart fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="color: black; position: relative; font-size: 23px; margin-left: -11px;"></i></a></li>
-                        
-                        <li class="nav-item ml-4"><a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg" style="color: black; position: relative; font-size: 23px; "></i></a></li>
-                    </ul>
-
-                    <span class="mt-2">
-                        <img src="img/patika.jpg" class="mb-1 ml-3" style="height: 23px; width: 23px; border-radius: 50%;">
-                        <span class="postuserfont"><strong>patika.dev</strong> ve <strong>888 diğer kişi</strong> beğendi</span>
-                    </span>
-
-                    <div class="card-body " style="margin-top: -15px">
-                        <p class="card-text postuserfont">
-                            <strong style="margin-left: -4px; margin-right: 5px;">coobishco</strong> Damak tadınıza uygun nefis kurabiyelerimi tatmak ister misiniz? 
-                        </p>
-                        <a href="#" style="text-decoration: none;">
-                            <p class="card-text postuserfont" style="margin-left: -4px; margin-top: -14px; color: rgb(139, 133, 133);">121 yorumun tümünü gör</p>
-                        </a>
-                        <p class="card-text postuserfont" style="margin-left: -4px; margin-right: 5px;" ><strong>patika.dev</strong> Kurabiyeler ekibimize ulaştı. Elinize sağlık!</p>
-                        <p class="card-text postuserfont" style="margin-top: -15px">
-                            <strong style="margin-left: -4px; margin-right: 5px;">yogaramann</strong> Yoga severler ile buluşan miss kurabiyeler</p>
-                        <p class="card-text" style="margin-top: -10px;margin-left: -4px; font-size: 12px; color: rgb(139, 133, 133);">10 SAAT ÖNCE</p>
-                    </div>
-
-                    <div class="card-footer" style="color: rgb(139, 133, 133); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px;">
-                        <span style="margin-left: -4px; ">Yorum Ekle..</span>
-                        <span style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <div class="card col-xs-12 rightpanel" id="sticky-sidebar"
-                style="width: 18rem; margin-top: 7px;">
-                    <div class="card-body d-flex">
-                        <div>
-                            <a class="nav-link" href="#">
-                                    <a href="https://www.instagram.com/ilknurergenc/">
-                                    <img class="storyphoto" src="img/ins.jpg">
-                                    <span style="margin-left: 20px;" class="postuserfont"><strong>ilknurergenc</strong>
-                                    </span>
+                    <div class="col-4">
+                        <div class="card col-xs-12 rightpanel" style="border: none;" id="sticky-sidebar">
+                            <div class="card-body overflow:hidden">
+                                <div>
+                                    <a class="nav-link" href="#">
+                                        <a href="https://www.instagram.com/ilknurergenc/">
+                                         <img class="storyphoto" src="img/ins.jpg">
+                                         <span style="margin-left: 20px;" class="postuserfont"><strong>ilknurergenc</strong>
+                                            </span>
+                                        </a>
                                     </a>
-                            </a>
 
-                            <div class="mt-3 mb-3">
-                                <span class="mt-5" style="color:grey;
-                                font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Senin İçin Öneriler</span>
-                                <span class="postuserfont mt-1" style="font-size: 12px; margin-left: 30px;"><strong>Tümünü Gör</strong></span>
-                            </div>
+                                    <div class="row mt-3 mb-3">
+                                        <span style="color:grey;
+                                        font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Senin İçin Öneriler</span>
+                                        <div class="col-auto ml-auto">
+                                            <span class="postuserfont mt-1" style="font-size: 12px;"><strong>Tümünü Gör</strong></span>
+                                        </div>
+                                    </div>
 
-                            <div>
-                                <span>
-                                    <img src="img/HipDict.jpg" style="width: 30px; height: 30; border-radius: 50%;"> 
-                                </span>
-                                <a href="https://www.instagram.com/hipdict/" target="_blank">
-                                    <span class="postuserfont ml-2 mt-1"><strong>hipdict</strong></span>
-                                    <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
-                                </a>
-                            </div>
+                                    <div class="row">
+                                        <span><img src="img/HipDict.jpg" style="width: 35px; height: 35px; border-radius: 50%;"></span>
+                                        <a href="https://www.instagram.com/hipdict/" target="_blank">
+                                            <span class="postuserfont mt-1 ml-2"><strong>hipdict</strong></span></a>
+                                        <span class="postuserfont col-auto ml-auto" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>   
+                                    </div>
 
-                            <div class="mt-3">
-                                <span>
-                                    <img src="img/hakanhoca.jpg" style="width: 30px; height: 30; border-radius: 50%;"> 
-                                </span>
-                                <a href="https://www.instagram.com/hakanyalcinkaya/" target="_blank">
-                                    <span class="postuserfont ml-2 mt-1"><strong>hakanyalcinkaya</strong></span>
-                                    <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
-                                </a>
-                            </div>
+                                    <div class="row mt-3">
+                                        <span><img src="img/hakanhoca.jpg" style="width: 35px; height: 35px; border-radius: 50%;"></span>
+                                        <a href="https://www.instagram.com/hakanyalcinkaya/" target="_blank">
+                                            <span class="postuserfont ml-2 mt-1"><strong>hakanyalcinkaya</strong></span></a>  
+                                        <span class="postuserfont col-auto ml-auto" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
+                                    </div>
 
-                            <div class="mt-3">
-                                <span>
-                                    <img src="img/ardaerel.jpg" style="width: 30px; height: 30; border-radius: 50%;"> 
-                                </span>
-                                <a href="https://www.instagram.com/ardaerel/" target="_blank">
-                                    <span class="postuserfont ml-2 mt-1"><strong>ardaerel</strong></span>
-                                    <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
-                                </a>
-                            </div>
+                                    <div class="row mt-3">
+                                        <span><img src="img/ardaerel.jpg" style="width: 35px; height: 35px; border-radius: 50%;"></span>
+                                        <a href="https://www.instagram.com/ardaerel/" target="_blank">
+                                            <span class="postuserfont ml-2 mt-1"><strong>ardaerel</strong></span></a>
+                                        <span class="postuserfont col-auto ml-auto" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
+                                    </div>
 
-                            <div class="mt-3">
-                                <span>
-                                    <img src="img/donat.jpeg" style="width: 30px; height: 30; border-radius: 50%;"> 
-                                </span>
-                                <a href="https://www.instagram.com/officialdonat_bahagia/" target="_blank">
-                                    <span class="postuserfont ml-2 mt-1"><strong>donat</strong></span>
-                                    <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
-                                </a>
-                            </div>
+                                    <div class="row mt-3">
+                                        <span><img src="img/donat.jpeg" style="width: 35px; height: 35px; border-radius: 50%;"></span>
+                                        <a href="https://www.instagram.com/officialdonat_bahagia/" target="_blank">
+                                            <span class="postuserfont ml-2 mt-1"><strong>donat</strong></span></a>
+                                        <span class="postuserfont col-auto ml-auto" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
+                                    </div>
 
-                            <div class="mt-3">
-                                <span>
-                                    <img src="img/guese.png" style="width: 30px; height: 30; border-radius: 50%;"> 
-                                </span>
-                                <a href="https://www.instagram.com/guess/" target="_blank">
-                                    <span class="postuserfont ml-2 mt-1"><strong>guess</strong></span>
-                                    <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
-                                </a>
-                            </div>
+                                    <div class="row mt-3">
+                                        <span></span><img src="img/guese.png" style="width: 35px; height: 35px; border-radius: 50%;"></span>
+                                        <a href="https://www.instagram.com/guess/" target="_blank">
+                                            <span class="postuserfont ml-2 mt-1"><strong>guess</strong></span></a>
+                                        <span class="postuserfont col-auto ml-auto" style="font-size: 13px; color: #0095f6; margin-top: 5px;"><strong>Takip Et</strong></span>    
+                                    </div>
 
-                            <div class="mt-3" style="color: lightgray; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">
-                                <a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a>
-                                <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a>
-                                <a href="https://about.instagram.com/blog/" target="_blank" class="rightpanellinks">Basın</a> 
-                                <a href="https://www.instagram.com/developer/" target="_blank" class="rightpanellinks">API</a> 
-                                <a href="https://www.instagram.com/about/jobs/" target="_blank" class="rightpanellinks">İş Fırsatları</a>
-                                <a href="https://www.instagram.com/legal/privacy/" target="_blank" class="rightpanellinks">Gizlilik</a>
-                                <a href="https://www.instagram.com/legal/terms/" target="_blank" class="rightpanellinks">Koşullar</a>
-                                <a href="https://www.instagram.com/explore/locations/" target="_blank" class="rightpanellinks">Konumlar</a>
-                                <a href="https://www.instagram.com/directory/profiles/" target="_blank" class="rightpanellinks">Dil</a>
-                                <p class="mt-3" style="font-size: 12px;">© 2022 INSTAGRAM FROM META</p>
+                                    <div class="mt-3" style="color: lightgray; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 11px;">
+                                        <a href="https://about.instagram.com/" target="_blank" class="rightpanellinks">Hakkında</a>
+                                        <a href="https://help.instagram.com/" target="_blank" class="rightpanellinks">Yardım</a>
+                                        <a href="https://about.instagram.com/blog/" target="_blank" class="rightpanellinks">Basın</a> 
+                                        <a href="https://www.instagram.com/developer/" target="_blank" class="rightpanellinks">API</a> 
+                                        <a href="https://www.instagram.com/about/jobs/" target="_blank" class="rightpanellinks">İş Fırsatları</a>
+                                        <a href="https://www.instagram.com/legal/privacy/" target="_blank" class="rightpanellinks">Gizlilik</a>
+                                        <a href="https://www.instagram.com/legal/terms/" target="_blank" class="rightpanellinks">Koşullar</a>
+                                        <a href="https://www.instagram.com/explore/locations/" target="_blank" class="rightpanellinks">Konumlar</a>
+                                        <a href="https://www.instagram.com/directory/profiles/" target="_blank" class="rightpanellinks">Dil</a>
+                                        <p class="mt-3" style="font-size: 12px;">© 2022 INSTAGRAM FROM META</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
     </div>
-
-
-
-
-
-
-
-
-
   </body>
 </html>
