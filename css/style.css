@@ -8,11 +8,6 @@
     background-repeat: no-repeat;
   }
 
-  .card-body {
-    overflow-y: hidden;
-    display: flex; /*d-flex ile storylerin yazıları resmin altına sabitlendi*/
-  }
-  
   input.empty {
       font-family: FontAwesome;
       font-style: normal;
